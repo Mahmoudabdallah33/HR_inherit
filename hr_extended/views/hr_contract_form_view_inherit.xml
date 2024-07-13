@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hiring_documenets_hr_form_view_inherit" model="ir.ui.view">
+            <field name="name">hiring documenets hr form view inherit</field>
+            <field name="model">hr.contract.history</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_history_view_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Hiring Documents">
+                        <field name="xx_hiring_documnet_ids" widget="many2many_checkboxes"/>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</odoo>
